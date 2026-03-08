@@ -1529,27 +1529,27 @@ h3 {
 .form-group select,
 .form-group textarea {
     width: 100%;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: var(--radius);
     padding: 13px 16px;
     font-family: var(--font-body);
     font-size: 0.95rem;
-    color: #FFFFFF;
+    color: var(--anthracite);
     transition: border-color var(--transition), background var(--transition);
     outline: none;
 }
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-    color: rgba(200, 210, 225, 0.5);
+    color: rgba(0, 0, 0, 0.35);
 }
 
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
     border-color: var(--rouge);
-    background: rgba(204, 0, 0, 0.05);
+    background: #FFFFFF;
 }
 
 .form-group select option {

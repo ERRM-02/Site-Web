@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Réalisations — ERRM Métallerie & Serrurerie</title>
+    <meta name="description"
+        content="Galerie des réalisations ERRM : escaliers industriels, coffrets métalliques, cloisons grillage, portes et portails sur mesure à Villers-Cotterêts." />
+    <link rel="icon" href="images/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container navbar-inner">
+            <a href="index.html" class="navbar-logo">
+                <img src="images/logo-errm.png" alt="Logo ERRM" />
+            </a>
+            <ul class="navbar-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="savoir-faire.html">Savoir-faire</a></li>
+                <li><a href="realisations.html" class="active">Réalisations</a></li>
+                <li><a href="a-propos.html">À propos</a></li>
+                <li><a href="contact.html" class="navbar-cta">Devis gratuit</a></li>
+            </ul>
+            <button class="burger" aria-label="Menu mobile">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div class="mobile-menu">
+            <a href="index.html">Accueil</a>
+            <a href="savoir-faire.html">Savoir-faire</a>
+            <a href="realisations.html">Réalisations</a>
+            <a href="a-propos.html">À propos</a>
+            <a href="contact.html">Devis gratuit</a>
+        </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="page-hero-bg-text">PORTFOLIO</div>
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="index.html">Accueil</a>
+                <span class="breadcrumb-sep">/</span>
+                <span>Réalisations</span>
+            </nav>
+            <span class="section-label">Portfolio</span>
+            <h1>Nos Réalisations</h1>
+            <p style="color:var(--acier);max-width:580px;margin-top:16px;font-size:1.05rem;line-height:1.8">
+                Chaque projet illustre notre engagement pour la qualité et la précision. Fabrication sur mesure en
+                acier, inox ou aluminium.
+            </p>
+        </div>
+    </section>
+
+    <!-- GALERIE -->
+    <section style="padding: var(--section-pad); background: var(--noir);">
+        <div class="container">
+            <div class="gallery-page-grid">
+
+                <!-- Réalisation 1 -->
+                <div class="gallery-page-item reveal" data-lightbox="images/real-escalier.jpg" style="cursor:pointer">
+                    <img src="images/real-escalier.jpg" alt="Escalier industriel acier avec plateformes et garde-corps"
+                        loading="lazy" />
+                    <div class="gallery-page-overlay">
+                        <span>Métallerie</span>
+                        <h4>Escalier industriel</h4>
+                    </div>
+                </div>
+
+                <!-- Réalisation 2 -->
+                <div class="gallery-page-item reveal reveal-delay-1" data-lightbox="images/real-coffret.jpg"
+                    style="cursor:pointer">
+                    <img src="images/real-coffret.jpg" alt="Coffret gaine technique en acier sur mesure"
+                        loading="lazy" />
+                    <div class="gallery-page-overlay">
+                        <span>Métallerie</span>
+                        <h4>Coffret technique acier</h4>
+                    </div>
+                </div>
+
+                <!-- Réalisation 3 -->
+                <div class="gallery-page-item reveal reveal-delay-2" data-lightbox="images/real-cloison.jpg"
+                    style="cursor:pointer">
+                    <img src="images/real-cloison.jpg" alt="Cloison grillage sécurisée noire en local industriel"
+                        loading="lazy" />
+                    <div class="gallery-page-overlay">
+                        <span>Serrurerie · Métallerie</span>
+                        <h4>Cloison grillage sécurisée</h4>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Message ajout photos -->
+            <div class="reveal"
+                style="margin-top:60px;text-align:center;background:var(--noir-card);border:1px dashed rgba(204,0,0,0.3);border-radius:4px;padding:40px 24px">
+                <p style="font-size:0.88rem;color:var(--acier);margin-bottom:16px;letter-spacing:1px">
+                    D'autres réalisations à venir — <strong style="color:var(--blanc-pur)">ajoutez vos photos dans le
+                        dossier <code style="color:var(--rouge)">images/</code></strong> et référencez-les ici.
+                </p>
+                <a href="contact.html" class="btn btn-outline">Nous confier votre projet</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" aria-label="Fermer">✕</button>
+        <img class="lightbox-img" src="" alt="Réalisation ERRM" />
+    </div>
+
+    <!-- CTA -->
+    <section class="contact-bar">
+        <div class="container contact-bar-inner">
+            <div>
+                <h2>Un projet similaire ? Discutons-en.</h2>
+                <p>Devis gratuit, réponse sous 48h</p>
+            </div>
+            <a href="contact.html" class="btn btn-white">
+                Demander un devis
+                <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo"><img src="images/logo-errm.png" alt="Logo ERRM" /></div>
+                    <p class="footer-desc">Spécialiste de la métallerie, serrurerie et maintenance industrielle à
+                        Villers-Cotterêts depuis 1991.</p>
+                    <div class="footer-contact-item">
+                        <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        </svg>
+                        <a href="tel:0323967707">03 23 96 77 07</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="savoir-faire.html">Savoir-faire</a></li>
+                        <li><a href="realisations.html">Réalisations</a></li>
+                        <li><a href="a-propos.html">À propos</a></li>
+                        <li><a href="contact.html">Contact & Devis</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Expertises</h4>
+                    <ul class="footer-links">
+                        <li><a href="savoir-faire.html#metallerie">Métallerie</a></li>
+                        <li><a href="savoir-faire.html#serrurerie">Serrurerie</a></li>
+                        <li><a href="savoir-faire.html#industrie">Industrie & Maintenance</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Horaires</h4>
+                    <div style="font-size:.88rem;color:var(--acier);line-height:2">
+                        <div><strong style="color:var(--blanc-pur)">Lundi – Vendredi</strong></div>
+                        <div>6h00 – 12h00 / 13h00 – 18h00</div>
+                        <div style="margin-top:8px;color:rgba(168,168,168,0.5)">Samedi & Dimanche : Fermé</div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 ERRM SAS — Tous droits réservés</p>
+                <p><a href="mentions-legales.html" style="color:rgba(168,168,168,0.5)">Mentions légales</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

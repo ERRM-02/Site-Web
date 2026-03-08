@@ -123,23 +123,58 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ========================
-  // CONTACT FORM
+  // CONTACT FORM (AJAX Formspree)
   // ========================
   const contactForm = document.querySelector('#contact-form');
   if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
+
       const btn = contactForm.querySelector('button[type="submit"]');
-      const originalText = btn.textContent;
-      btn.textContent = 'Message envoyé ✓';
+      const originalHTML = btn.innerHTML;
+
+      // État de chargement
+      btn.textContent = 'Envoi en cours...';
       btn.disabled = true;
-      btn.style.background = '#1E6B1E';
+
+      const formData = new FormData(contactForm);
+
+      try {
+        const response = await fetch(contactForm.action, {
+          method: contactForm.method,
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+
+        if (response.ok) {
+          // Succès
+          btn.textContent = 'Message envoyé ✓';
+          btn.style.background = '#1E6B1E';
+          contactForm.reset();
+        } else {
+          // Erreur Formspree
+          const data = await response.json();
+          if (Object.hasOwn(data, 'errors')) {
+            btn.textContent = data.errors.map(error => error.message).join(", ");
+          } else {
+            btn.textContent = 'Erreur lors de l\'envoi';
+          }
+          btn.style.background = 'var(--rouge)';
+        }
+      } catch (error) {
+        // Erreur réseau
+        btn.textContent = 'Erreur de connexion';
+        btn.style.background = 'var(--rouge)';
+      }
+
+      // Restauration du bouton après 4 secondes
       setTimeout(() => {
-        btn.textContent = originalText;
+        btn.innerHTML = originalHTML;
         btn.disabled = false;
         btn.style.background = '';
-        contactForm.reset();
-      }, 3500);
+      }, 4000);
     });
   }
 

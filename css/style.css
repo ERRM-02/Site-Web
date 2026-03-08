@@ -1568,13 +1568,16 @@ h3 {
 }
 
 .contact-info-block {
-    background: var(--noir-card);
-    border: 1px solid rgba(255, 255, 255, 0.07);
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    /* Bordure subtile grise */
     border-radius: var(--radius);
     padding: 28px 32px;
     display: flex;
     gap: 18px;
     align-items: flex-start;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+    /* Très légère ombre portée */
 }
 
 .contact-info-icon {
@@ -1601,13 +1604,13 @@ h3 {
 
 .contact-info-value {
     font-size: 1rem;
-    color: var(--blanc-pur);
+    color: var(--anthracite);
     font-weight: 500;
 }
 
 .contact-info-sub {
     font-size: 0.82rem;
-    color: var(--acier);
+    color: rgba(0, 0, 0, 0.6);
     margin-top: 2px;
 }
 
@@ -1620,11 +1623,11 @@ h3 {
 
 .horaire-row {
     font-size: 0.85rem;
-    color: var(--acier);
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .horaire-row strong {
-    color: var(--blanc-pur);
+    color: var(--anthracite);
     display: block;
 }
 

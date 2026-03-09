@@ -35,17 +35,15 @@ new_gallery_block = "\n".join(gallery_html)
 with open(html_file, 'r', encoding='utf-8') as f:
     content = f.read()
 
-# On remplace le contenu entre <div class="gallery-page-grid"> et </div>
+# On remplace le contenu entre <div class="gallery-page-grid"> et la fermeture de la grille
 # On utilise une expression régulière pour trouver le début et la fin
-pattern = re.compile(r'(<div class="gallery-page-grid">)(.*?)(<!-- Message ajout photos -->)', re.DOTALL)
+pattern = re.compile(r'(<div class="gallery-page-grid">)(.*?)(</div>\s*</div>\s*</section>)', re.DOTALL)
 
-replacement = r'\1\n' + new_gallery_block.replace('\\', r'\\') + r'\n\n            </div>\n\n            \3'
+replacement = r'\1\n' + new_gallery_block.replace('\\', r'\\') + r'\n\n            \3'
 
 new_content = pattern.sub(replacement, content)
 
-# On va supprimer le bloc de message temporaire aussi
-pattern_msg = re.compile(r'(<!-- Message ajout photos -->)(.*?)(</div>)', re.DOTALL)
-new_content = pattern_msg.sub('', new_content)
+# Le bloc message temporaire n'est plus effacé ici car déjà traité.
 
 with open(html_file, 'w', encoding='utf-8') as f:
     f.write(new_content)

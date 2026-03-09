@@ -1432,6 +1432,7 @@ h3 {
 .gallery-page-overlay h4 {
     font-size: 1.1rem;
     margin-bottom: 4px;
+    color: var(--blanc-pur);
 }
 
 .gallery-page-overlay span {

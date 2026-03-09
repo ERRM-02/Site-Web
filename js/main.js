@@ -178,4 +178,33 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // ========================
+  // FILTER GALLERY BY URL
+  // ========================
+  const urlParams = new URLSearchParams(window.location.search);
+  const filterCat = urlParams.get('filter');
+  if (filterCat) {
+    const galleryItems = document.querySelectorAll('.gallery-page-item');
+    if (galleryItems.length > 0) {
+      // Retirer le label temp si existant
+      const tempLabel = document.querySelector('.section-label.reveal');
+      if (tempLabel) tempLabel.textContent = `Portfolio filtré : ${filterCat}`;
+
+      // Filtrer les éléments
+      galleryItems.forEach(item => {
+        const catSpan = item.querySelector('.gallery-page-overlay span');
+        if (catSpan && !catSpan.textContent.toLowerCase().includes(filterCat.toLowerCase())) {
+          item.style.display = 'none';
+        }
+      });
+      // Scroll vers la galerie
+      const gallerySection = document.querySelector('.gallery-page-grid');
+      if (gallerySection) {
+        setTimeout(() => {
+          gallerySection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 300);
+      }
+    }
+  }
+
 });

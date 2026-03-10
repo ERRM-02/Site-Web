@@ -186,9 +186,12 @@ document.addEventListener('DOMContentLoaded', () => {
   if (filterCat) {
     const galleryItems = document.querySelectorAll('.gallery-page-item');
     if (galleryItems.length > 0) {
-      // Retirer le label temp si existant
+      // Modifier le label et le titre principal
       const tempLabel = document.querySelector('.section-label.reveal');
       if (tempLabel) tempLabel.textContent = `Portfolio filtré : ${filterCat}`;
+
+      const pageTitle = document.querySelector('.page-hero h1');
+      if (pageTitle) pageTitle.textContent = filterCat;
 
       // Filtrer les éléments
       galleryItems.forEach(item => {

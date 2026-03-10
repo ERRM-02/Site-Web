@@ -225,6 +225,59 @@ h3 {
     color: var(--anthracite);
 }
 
+/* ========================
+   DROPDOWN MENU
+   ======================== */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: -15px;
+    background: #fff;
+    min-width: 270px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border-radius: var(--radius);
+    padding: 10px 0;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    pointer-events: none;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.dropdown:hover .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 12px 24px;
+    font-size: 0.85rem;
+    color: var(--anthracite) !important;
+    text-transform: none;
+    /* On ne force pas les majuscules */
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+.dropdown-menu a::after {
+    display: none !important;
+}
+
+.dropdown-menu a:hover {
+    background: rgba(204, 0, 0, 0.04);
+    color: var(--rouge) !important;
+}
+
 .navbar-cta {
     background: var(--rouge);
     color: var(--blanc-pur) !important;

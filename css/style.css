@@ -278,7 +278,7 @@ h3 {
     color: var(--rouge) !important;
 }
 
-.navbar-cta {
+.navbar-links a.navbar-cta {
     background: var(--rouge);
     color: var(--blanc-pur) !important;
     padding: 10px 22px;
@@ -288,11 +288,11 @@ h3 {
     transition: background var(--transition), transform var(--transition) !important;
 }
 
-.navbar-cta::after {
+.navbar-links a.navbar-cta::after {
     display: none !important;
 }
 
-.navbar-cta:hover {
+.navbar-links a.navbar-cta:hover {
     background: var(--rouge-hover) !important;
     transform: translateY(-1px);
 }

@@ -425,10 +425,17 @@ h3 {
     border-color: rgba(255, 255, 255, 0.5);
 }
 
-.hero .btn-outline:hover,
-.contact-bar .btn-outline:hover {
+.hero .btn-outline:hover {
     border-color: var(--rouge);
     color: var(--rouge);
+    /* Sur fond hero sombre, le rouge ressort */
+}
+
+.contact-bar .btn-outline:hover {
+    border-color: var(--blanc-pur);
+    color: var(--blanc-pur);
+    background: rgba(255, 255, 255, 0.1);
+    /* Sur fond rouge, passe en blanc éclatant */
 }
 
 .btn svg {

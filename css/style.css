@@ -1631,14 +1631,13 @@ h3 {
 .contact-info-block {
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.08);
-    /* Bordure subtile grise */
     border-radius: var(--radius);
-    padding: 28px 32px;
+    padding: 24px 20px;
     display: flex;
-    gap: 18px;
+    gap: 16px;
     align-items: flex-start;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
-    /* Très légère ombre portée */
+    height: 100%;
 }
 
 .contact-info-icon {

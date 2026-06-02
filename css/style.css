@@ -486,7 +486,7 @@ h3 {
 .hero-bg-img {
     position: absolute;
     inset: 0;
-    background-image: url('../images/hero-bg.JPG');
+    background-image: url('../images/hero-bg.webp');
     background-size: cover;
     background-position: center;
     filter: grayscale(20%) brightness(0.75);

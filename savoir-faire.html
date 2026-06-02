@@ -9,6 +9,45 @@
         content="ERRM : maintenance mécanique industrielle, chaudronnerie, tuyauterie, métallerie, serrurerie et charpente métallique à Villers-Cotterêts. Qualification QUALIBAT." />
     <link rel="icon" href="images/favicon.png" type="image/png" />
     <link rel="stylesheet" href="css/style.css" />
+    <!-- Tarteaucitron -->
+    <script src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.17.0/tarteaucitron.min.js"></script>
+    <script>
+        tarteaucitron.init({
+            "privacyUrl": "mentions-legales.html",
+            "bodyPosition": "bottom",
+            "hashtag": "#tarteaucitron",
+            "cookieName": "tarteaucitron",
+            "orientation": "middle",
+            "groupServices": false,
+            "showDetailsOnClick": true,
+            "serviceDefaultState": "wait",
+            "showAlertSmall": false,
+            "cookieslist": false,
+            "closePopup": false,
+            "showIcon": true,
+            "iconPosition": "BottomLeft",
+            "adblocker": false,
+            "DenyAllCta" : true,
+            "AcceptAllCta" : true,
+            "highPrivacy": true,
+            "handleBrowserDNTRequest": false,
+            "removeCredit": true,
+            "moreInfoLink": true,
+            "useExternalCss": false,
+            "useExternalJs": false,
+            "readmoreLink": "",
+            "mandatory": true,
+            "mandatoryCta": true
+        });
+
+        // Google Analytics (gtag)
+        tarteaucitron.user.gtagUa = 'G-XXXXXXXXXX'; // Remplacez par votre vrai code
+        tarteaucitron.user.gtagMore = function () { /* optionnel */ };
+        (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
+
+        // IFrames génériques (Google Maps)
+        (tarteaucitron.job = tarteaucitron.job || []).push('iframe');
+    </script>
 </head>
 
 <body>

@@ -2117,4 +2117,28 @@ h3 {
 /* Espace modéré entre la section services et le bandeau clients */
 .services-section {
     padding-bottom: 40px !important;
+}
+
+/* Personnalisation Tarteaucitron RGPD */
+#tarteaucitronRoot {
+    font-family: var(--font-primary) !important;
+}
+#tarteaucitronAlertBig {
+    background-color: var(--noir-fonce) !important;
+    border-top: 3px solid var(--rouge-errm) !important;
+}
+#tarteaucitronAlertBig, #tarteaucitronAlertBig * {
+    color: var(--blanc) !important;
+}
+#tarteaucitronAlertBig .tarteaucitronBtn {
+    background-color: var(--rouge-errm) !important;
+    color: var(--blanc-pur) !important;
+    border: none !important;
+    border-radius: 4px !important;
+    font-weight: 600 !important;
+    padding: 8px 16px !important;
+    transition: background-color 0.2s ease;
+}
+#tarteaucitronAlertBig .tarteaucitronBtn:hover {
+    background-color: #d11e1e !important;
 }

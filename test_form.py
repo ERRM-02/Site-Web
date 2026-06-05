@@ -2,7 +2,7 @@ import urllib.request
 import urllib.parse
 import json
 
-url = "https://formspree.io/f/mpqywekn"
+url = "https://formspree.io/f/xlgkdvyn"
 data = urllib.parse.urlencode({
     "email": "test@errm.fr",
     "message": "Ceci est un test automatique du site web."

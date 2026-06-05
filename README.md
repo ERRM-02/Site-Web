@@ -1,131 +1,67 @@
-# Site Web ERRM
+<div align="center">
+  <a href="https://errm.fr">
+    <img src="images/logo-errm.png" alt="ERRM Logo" width="300" />
+  </a>
 
-Site statique HTML/CSS pour **ERRM** — Maintenance industrielle, chaudronnerie, tuyauterie, métallerie et serrurerie à Villers-Cotterêts.
+  <br />
+  <br />
 
----
+  **L'Excellence en Maintenance Industrielle et Métallerie depuis 1991.**
+  
+  [![Visiter le site web](https://img.shields.io/badge/Visiter_le_site_web-errm.fr-red?style=for-the-badge&logo=google-chrome)](https://errm.fr)
 
-## 📁 Structure du projet
-
-```
-Site web/
-├── index.html            — Page d'accueil
-├── savoir-faire.html     — Nos métiers (4 domaines)
-├── realisations.html     — Galerie de réalisations
-├── a-propos.html         — L'entreprise
-├── contact.html          — Formulaire de devis
-├── mentions-legales.html — Mentions légales
-├── css/
-│   └── style.css         — Feuille de style principale
-├── js/
-│   └── main.js           — Scripts (navbar, animations, lightbox)
-└── images/
-    ├── logo-errm.png     — Logo principal
-    ├── hero-bg.jpg       — Image de fond accueil
-    ├── real-escalier.jpg — Réalisation escalier
-    ├── real-coffret.jpg  — Réalisation coffret acier
-    └── real-cloison.jpg  — Réalisation cloison grillage
-```
+  <br />
+</div>
 
 ---
 
-## 📬 Activer le formulaire de devis (Formspree)
+## 🏭 Qui sommes-nous ?
 
-Le formulaire de contact utilise **[Formspree](https://formspree.io)** pour envoyer les demandes de devis par email sans serveur.
+Située à **Villers-Cotterêts** (Aisne), **ERRM** est une entreprise spécialisée dans le travail du métal et la maintenance industrielle. 
 
-### Étape 1 — Créer votre compte Formspree
-
-1. Allez sur [formspree.io](https://formspree.io)
-2. Créez un compte avec l'adresse email où vous souhaitez recevoir les devis
-3. Créez un **nouveau formulaire** (bouton "+ New Form")
-4. Notez votre **endpoint** : `https://formspree.io/f/XXXXXXXX`
-
-### Étape 2 — Renseigner l'ID dans le code
-
-Ouvrez `contact.html` et recherchez la ligne :
-
-```html
-<form id="contact-form" action="https://formspree.io/f/VOTRE_ID_FORMSPREE" method="POST">
-```
-
-Remplacez `VOTRE_ID_FORMSPREE` par votre vrai ID :
-
-```html
-<form id="contact-form" action="https://formspree.io/f/abcdefgh" method="POST">
-```
-
-### Étape 3 — Autoriser votre domaine sur Formspree
-
-Dans votre tableau de bord Formspree → paramètres du formulaire → **"Allowed Domains"** :
-- Ajoutez votre nom de domaine (ex : `www.errm-btp.fr`)
-- Ajoutez aussi `yourusername.github.io` pour les tests
-
-> ⚠️ **Note sur la confidentialité de l'ID**
->
-> Dans un site HTML statique, l'ID Formspree est visible dans le code source de la page — **c'est normal et attendu** par Formspree. Il n'est pas possible de le cacher sans étape de build (Next.js, Vite, etc.).
->
-> Formspree protège votre formulaire par d'autres moyens :
-> - Restriction par domaine autorisé (paramètres du formulaire)
-> - Filtre anti-spam intégré
-> - Champ honeypot anti-bot déjà intégré dans le formulaire
->
-> L'ID seul ne suffit pas à abuser du formulaire si votre domaine est restreint.
+Forts de **plus de 30 ans d'expérience**, nous accompagnons les professionnels de l'industrie, de la logistique et de la grande distribution dans la conception, la fabrication et la maintenance de leurs équipements et infrastructures. Avec un atelier de plus de 1000 m², un bureau d'études intégré et 7 véhicules d'intervention, nous garantissons **réactivité, sur-mesure et qualité**.
 
 ---
 
-## 🌐 Déploiement sur GitHub Pages
+## 🛠️ Nos 5 cœurs de métier
 
-### 1. Créer le dépôt GitHub
-
-```bash
-git init
-git add .
-git commit -m "Initial commit — site ERRM"
-git remote add origin https://github.com/VOTRE_COMPTE/errm-site.git
-git push -u origin main
-```
-
-### 2. Activer GitHub Pages
-
-1. Sur GitHub, allez dans **Settings → Pages**
-2. Source : `Deploy from a branch` → branche `main` → dossier `/ (root)`
-3. Cliquez **Save**
-
-Le site sera accessible à : `https://VOTRE_COMPTE.github.io/errm-site/`
-
-### 3. Ajouter votre nom de domaine personnalisé
-
-1. Dans **Settings → Pages → Custom domain** : entrez votre domaine (ex : `www.errm-btp.fr`)
-2. Chez votre registrar DNS, ajoutez un enregistrement **CNAME** :
-   - Nom : `www`
-   - Valeur : `VOTRE_COMPTE.github.io`
-3. Si vous voulez l'apex (`errm-btp.fr` sans www), ajoutez 4 enregistrements **A** pointant vers :
-   - `185.199.108.153`
-   - `185.199.109.153`
-   - `185.199.110.153`
-   - `185.199.111.153`
-4. Cochez **"Enforce HTTPS"** dans GitHub Pages (disponible après quelques minutes)
+1. 🔧 **Maintenance Industrielle** : Entretien préventif et correctif, réparation et remplacement de pièces mécaniques en milieu industriel en activité.
+2. 🗜️ **Chaudronnerie & Tuyauterie** : Conception sur-mesure de cuves, réservoirs et réseaux en acier, inox ou aluminium.
+3. 🏗️ **Charpente Métallique** : Planchers techniques, passerelles, extensions, renforcement de structures (en partenariat avec notre bureau d'études).
+4. 🚪 **Métallerie & Serrurerie** : Garde-corps, escaliers, portes sécurisées, grilles, cloisons industrielles.
+5. 🌬️ **Salle Propre & Ventilation** : Structures étanches, traitement de l'air et réseaux de gaines de ventilation sur-mesure pour environnements exigeants.
 
 ---
 
-## 🔄 Mettre à jour le site
+## 💡 Pourquoi choisir ERRM ?
 
-```bash
-# Après modification des fichiers :
-git add .
-git commit -m "Description de la modification"
-git push
-```
-
-GitHub Pages se met à jour automatiquement dans les 1-2 minutes.
+- **Bureau d'études intégré** (Modélisation 3D, SolidWorks, AutoCAD)
+- **Atelier de fabrication** moderne et performant (1000 m²)
+- **Équipe qualifiée** (Soudeurs agréés, monteurs spécialisés)
+- **Intervention rapide** sur la moitié Nord de la France
+- **Gestion globale** : de la conception 3D à la pose sur site
 
 ---
 
-## 📞 Contacts
+## 📸 Découvrez nos réalisations
 
-| Rôle | Nom | Téléphone |
-|---|---|---|
-| Standard | — | 03 23 96 77 07 |
-| Commercial | Florent Langrené | 06 08 81 34 58 |
-| Technique | Kévin Gay | 06 37 07 83 75 |
+Consultez notre portfolio en ligne pour découvrir la qualité de notre savoir-faire en images : 
 
-**Adresse** : 19 bis rue du Marchoix, 02600 Villers-Cotterêts
+👉 **[Voir notre Galerie de Réalisations](https://errm.fr/realisations.html)**
+
+---
+
+## 📞 Nous contacter
+
+Votre projet prend forme ici. Discutons-en !
+
+- 🌐 **Site Web** : [www.errm.fr](https://errm.fr)
+- 📧 **Email** : [contact@errm.fr](mailto:contact@errm.fr)
+- 📞 **Standard** : 03 23 96 77 07
+- 📍 **Atelier & Siège** : 19 bis rue du Marchoix, 02600 Villers-Cotterêts
+
+<br/>
+
+<div align="center">
+  <i>© 2026 ERRM SAS — Tous droits réservés.</i>
+</div>

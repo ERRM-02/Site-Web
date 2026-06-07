@@ -1,6 +1,7 @@
 import os
 import re
 import urllib.parse
+import html
 
 html_file = r"C:\Users\User\Documents\ERRM\Site web\realisations.html"
 sitemap_path = r"C:\Users\User\Documents\ERRM\Site web\sitemap.xml"
@@ -61,9 +62,10 @@ for cat in sorted(categories):
         img_url = f"https://errm.fr/images/realisations/{cat}/{img}"
         img_url = urllib.parse.quote(img_url, safe=":/") 
         img_title = f"{cat} — ERRM"
+        img_title_escaped = html.escape(img_title)
         tag = f"""    <image:image>
       <image:loc>{img_url}</image:loc>
-      <image:title>{img_title}</image:title>
+      <image:title>{img_title_escaped}</image:title>
     </image:image>"""
         image_tags.append(tag)
 

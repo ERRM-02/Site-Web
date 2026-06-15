@@ -7,13 +7,13 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://errm.fr/savoir-faire.html</loc>
+    <loc>https://errm.fr/savoir-faire</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://errm.fr/realisations.html</loc>
+    <loc>https://errm.fr/realisations</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -375,13 +375,13 @@
     </image:image>
   </url>
   <url>
-    <loc>https://errm.fr/a-propos.html</loc>
+    <loc>https://errm.fr/a-propos</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://errm.fr/contact.html</loc>
+    <loc>https://errm.fr/contact</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>

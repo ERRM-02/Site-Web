@@ -3,9 +3,10 @@ import re
 import urllib.parse
 import html
 
-html_file = r"C:\Users\User\Documents\ERRM\Site web\realisations.html"
-sitemap_path = r"C:\Users\User\Documents\ERRM\Site web\sitemap.xml"
-base_dir = r"C:\Users\User\Documents\ERRM\Site web\images\realisations"
+script_dir = os.path.dirname(os.path.abspath(__file__))
+html_file = os.path.join(script_dir, "realisations.html")
+sitemap_path = os.path.join(script_dir, "sitemap.xml")
+base_dir = os.path.join(script_dir, "images", "realisations")
 
 print("--- Début de la mise à jour du site ---")
 

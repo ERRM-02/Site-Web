@@ -70,7 +70,7 @@ for cat in sorted(categories):
         image_tags.append(tag)
 
 image_block = "\n".join(image_tags)
-pattern_sitemap = re.compile(r'(<loc>https://errm\.fr/realisations\.html</loc>.*?<priority>.*?</priority>\n)(.*?)(  </url>)', re.DOTALL)
+pattern_sitemap = re.compile(r'(<loc>https://errm\.fr/realisations</loc>.*?<priority>.*?</priority>\n)(.*?)(  </url>)', re.DOTALL)
 match = pattern_sitemap.search(sitemap_content)
 
 if match:

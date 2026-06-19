@@ -57,6 +57,40 @@
         // IFrames génériques (Google Maps)
         (tarteaucitron.job = tarteaucitron.job || []).push('iframe');
     </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "ERRM",
+      "image": "https://errm.fr/images/logo-errm.png",
+      "@id": "https://errm.fr",
+      "url": "https://errm.fr",
+      "telephone": "+33323967707",
+      "email": "contact@errm.fr",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "19 Bis Rue du Marchois",
+        "addressLocality": "Villers-Cotterêts",
+        "postalCode": "02600",
+        "addressCountry": "FR"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "08:00",
+        "closes": "17:00"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/errm-02/"
+      ]
+    }
+    </script>
 </head>
 
 <body>
@@ -171,7 +205,7 @@
         </div>
         <div class="services-grid" style="grid-template-columns:repeat(auto-fit,minmax(270px,1fr))">
             <!-- Chaudronnerie -->
-            <a href="savoir-faire.html#chaudronnerie" class="service-card reveal">
+            <a href="savoir-faire#chaudronnerie" class="service-card reveal">
                 <div class="service-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -190,7 +224,7 @@
                 </span>
             </a>
             <!-- Métallerie -->
-            <a href="savoir-faire.html#metallerie" class="service-card reveal reveal-delay-1">
+            <a href="savoir-faire#metallerie" class="service-card reveal reveal-delay-1">
                 <div class="service-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -209,7 +243,7 @@
                 </span>
             </a>
             <!-- Maintenance -->
-            <a href="savoir-faire.html#maintenance" class="service-card reveal reveal-delay-2">
+            <a href="savoir-faire#maintenance" class="service-card reveal reveal-delay-2">
                 <div class="service-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -229,7 +263,7 @@
                 </span>
             </a>
             <!-- Charpente -->
-            <a href="savoir-faire.html#charpente" class="service-card reveal reveal-delay-3">
+            <a href="savoir-faire#charpente" class="service-card reveal reveal-delay-3">
                 <div class="service-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -418,8 +452,8 @@
     <section class="contact-bar">
         <div class="container contact-bar-inner">
             <div>
-                <h2>Un projet ? Parlons-en.</h2>
-                <p>Devis gratuit sous 48h — réponse rapide garantie</p>
+                <h2>Un projet ? On en discute.</h2>
+                <p>Devis personnalisé sous 48h — sans engagement</p>
             </div>
             <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:center">
                 <a href="tel:0323967707" class="btn btn-white">
@@ -461,7 +495,7 @@
                 <div>
                     <h4 class="footer-heading">Navigation</h4>
                     <ul class="footer-links">
-                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="/">Accueil</a></li>
                         <li><a href="savoir-faire">Savoir-faire</a></li>
                         <li><a href="realisations">Réalisations</a></li>
                         <li><a href="a-propos">À propos</a></li>
@@ -471,11 +505,11 @@
                 <div>
                     <h4 class="footer-heading">Métiers</h4>
                     <ul class="footer-links">
-                        <li><a href="savoir-faire.html#maintenance">Maintenance industrielle</a></li>
-                        <li><a href="savoir-faire.html#chaudronnerie">Chaudronnerie · Tuyauterie</a></li>
-                        <li><a href="savoir-faire.html#metallerie">Métallerie · Serrurerie</a></li>
-                        <li><a href="savoir-faire.html#charpente">Charpente métallique</a></li>
-                        <li><a href="savoir-faire.html#salle-propre">Salle Propre & Ventilation</a></li>
+                        <li><a href="savoir-faire#maintenance">Maintenance industrielle</a></li>
+                        <li><a href="savoir-faire#chaudronnerie">Chaudronnerie · Tuyauterie</a></li>
+                        <li><a href="savoir-faire#metallerie">Métallerie · Serrurerie</a></li>
+                        <li><a href="savoir-faire#charpente">Charpente métallique</a></li>
+                        <li><a href="savoir-faire#salle-propre">Salle Propre & Ventilation</a></li>
                     </ul>
                 </div>
                 <div>

@@ -7,7 +7,7 @@
     <title>Contact & Devis — ERRM Métallerie & Maintenance Industrielle</title>
     <meta name="description"
         content="Contactez ERRM pour un devis. Maintenance industrielle, chaudronnerie, métallerie, serrurerie à Villers-Cotterêts. Réponse sous 48h." />
-        <link rel="canonical" href="https://errm.fr/contact" />
+    <link rel="canonical" href="https://errm.fr/contact" />
     <link rel="icon" href="images/favicon.png" type="image/png" />
     <!-- Open Graph SEO -->
     <meta property="og:title" content="Contactez ERRM — Devis & Renseignements" />
@@ -55,6 +55,64 @@
 
         // IFrames génériques (Google Maps)
         (tarteaucitron.job = tarteaucitron.job || []).push('iframe');
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "ContactPage",
+          "@id": "https://errm.fr/contact",
+          "url": "https://errm.fr/contact",
+          "name": "Contact & Devis — ERRM Métallerie & Maintenance Industrielle",
+          "description": "Contactez ERRM pour un devis. Maintenance industrielle, chaudronnerie, métallerie, serrurerie à Villers-Cotterêts. Réponse sous 48h."
+        },
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://errm.fr",
+          "name": "ERRM",
+          "image": "https://errm.fr/images/logo-errm.png",
+          "telephone": "+33323967707",
+          "email": "contact@errm.fr",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "19 Bis Rue du Marchois",
+            "addressLocality": "Villers-Cotterêts",
+            "postalCode": "02600",
+            "addressCountry": "FR"
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "17:00"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Accueil",
+              "item": "https://errm.fr/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Contact",
+              "item": "https://errm.fr/contact"
+            }
+          ]
+        }
+      ]
+    }
     </script>
 </head>
 
@@ -131,20 +189,29 @@
                 <!-- FORMULAIRE FORMSPREE -->
                 <div class="contact-form reveal">
                     <h3 style="margin-bottom:8px;font-size:1.6rem;color:var(--anthracite)">Votre demande de devis</h3>
-                    <p style="color:var(--acier);font-size:.88rem;margin-bottom:32px">Tous les champs sont obligatoires.
+                    <p style="color:var(--acier);font-size:.88rem;margin-bottom:16px">Les champs marqués * sont
+                        obligatoires.
                         Votre demande nous parvient directement par email.</p>
+                    <p
+                        style="color:var(--acier);font-size:.85rem;margin-bottom:32px;display:flex;align-items:center;gap:6px">
+                        <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        Plus de 30 ans d'expertise — réponse sous 48h
+                    </p>
 
                     <!-- ⚠️ Remplacez "VOTRE_ID_FORMSPREE" par l'ID obtenu sur formspree.io -->
                     <form id="contact-form" action="https://formspree.io/f/xlgkdvyn" method="POST" novalidate>
 
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="nom">Nom</label>
+                                <label for="nom">Nom *</label>
                                 <input type="text" id="nom" name="nom" placeholder="Votre nom" required
                                     autocomplete="family-name" />
                             </div>
                             <div class="form-group">
-                                <label for="prenom">Prénom</label>
+                                <label for="prenom">Prénom *</label>
                                 <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required
                                     autocomplete="given-name" />
                             </div>
@@ -152,19 +219,19 @@
 
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="telephone">Téléphone</label>
+                                <label for="telephone">Téléphone *</label>
                                 <input type="tel" id="telephone" name="telephone" placeholder="06 00 00 00 00" required
                                     autocomplete="tel" />
                             </div>
                             <div class="form-group">
-                                <label for="email">Email</label>
+                                <label for="email">Email *</label>
                                 <input type="email" id="email" name="email" placeholder="votre@mail.fr" required
                                     autocomplete="email" />
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="type">Type de prestation</label>
+                            <label for="type">Type de prestation *</label>
                             <select id="type" name="type" required>
                                 <option value="" disabled selected>Choisir une prestation…</option>
                                 <option value="maintenance">Maintenance industrielle mécanique</option>
@@ -182,7 +249,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="message">Description du projet</label>
+                            <label for="message">Description du projet *</label>
                             <textarea id="message" name="message"
                                 placeholder="Décrivez votre projet : nature des travaux, site d'intervention, contraintes particulières, délai souhaité…"
                                 required></textarea>
@@ -195,7 +262,7 @@
                         <input type="hidden" name="_subject" value="Nouveau devis ERRM" />
 
                         <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">
-                            Envoyer ma demande
+                            Envoyer ma demande de devis
                             <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor"
                                 stroke-width="2.5">
                                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -348,11 +415,11 @@
                 <div>
                     <h4 class="footer-heading">Métiers</h4>
                     <ul class="footer-links">
-                        <li><a href="savoir-faire.html#maintenance">Maintenance industrielle</a></li>
-                        <li><a href="savoir-faire.html#chaudronnerie">Chaudronnerie · Tuyauterie</a></li>
-                        <li><a href="savoir-faire.html#metallerie">Métallerie · Serrurerie</a></li>
-                        <li><a href="savoir-faire.html#charpente">Charpente métallique</a></li>
-                        <li><a href="savoir-faire.html#salle-propre">Salle Propre & Ventilation</a></li>
+                        <li><a href="savoir-faire#maintenance">Maintenance industrielle</a></li>
+                        <li><a href="savoir-faire#chaudronnerie">Chaudronnerie · Tuyauterie</a></li>
+                        <li><a href="savoir-faire#metallerie">Métallerie · Serrurerie</a></li>
+                        <li><a href="savoir-faire#charpente">Charpente métallique</a></li>
+                        <li><a href="savoir-faire#salle-propre">Salle Propre & Ventilation</a></li>
                     </ul>
                 </div>
                 <div>

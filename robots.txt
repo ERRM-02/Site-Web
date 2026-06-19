@@ -1,4 +1,16 @@
 User-agent: *
 Allow: /
 
+# AEO: Nous autorisons explicitement les robots des intelligences artificielles
+# (ChatGPT, Perplexity, Google Gemini...) à crawler ce site pour référencer
+# ERRM dans leurs réponses aux utilisateurs (Answer Engine Optimization).
+User-agent: GPTBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+
 Sitemap: https://errm.fr/sitemap.xml

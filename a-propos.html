@@ -7,7 +7,7 @@
     <title>À propos — ERRM Métallerie & Serrurerie</title>
     <meta name="description"
         content="ERRM, artisan métallier à Villers-Cotterêts depuis 1991. Découvrez notre histoire, nos valeurs et notre engagement pour la qualité." />
-        <link rel="canonical" href="https://errm.fr/a-propos" />
+    <link rel="canonical" href="https://errm.fr/a-propos" />
     <link rel="icon" href="images/favicon.png" type="image/png" />
     <!-- Open Graph SEO -->
     <meta property="og:title" content="À propos de ERRM" />
@@ -55,6 +55,30 @@
 
         // IFrames génériques (Google Maps)
         (tarteaucitron.job = tarteaucitron.job || []).push('iframe');
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Accueil",
+              "item": "https://errm.fr/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "À propos",
+              "item": "https://errm.fr/a-propos"
+            }
+          ]
+        }
+      ]
+    }
     </script>
 </head>
 
@@ -181,7 +205,7 @@
                     </div>
                     <h4>Proximité</h4>
                     <p>Un seul interlocuteur pour votre projet, du premier contact à la livraison finale. Réactivité et
-                        disponibilité guaranteed.</p>
+                        disponibilité garantie.</p>
                 </div>
                 <div class="value-card reveal reveal-delay-2">
                     <div class="value-card-icon">
@@ -358,11 +382,11 @@
                 <div>
                     <h4 class="footer-heading">Métiers</h4>
                     <ul class="footer-links">
-                        <li><a href="savoir-faire.html#maintenance">Maintenance industrielle</a></li>
-                        <li><a href="savoir-faire.html#chaudronnerie">Chaudronnerie · Tuyauterie</a></li>
-                        <li><a href="savoir-faire.html#metallerie">Métallerie · Serrurerie</a></li>
-                        <li><a href="savoir-faire.html#charpente">Charpente métallique</a></li>
-                        <li><a href="savoir-faire.html#salle-propre">Salle Propre & Ventilation</a></li>
+                        <li><a href="savoir-faire#maintenance">Maintenance industrielle</a></li>
+                        <li><a href="savoir-faire#chaudronnerie">Chaudronnerie · Tuyauterie</a></li>
+                        <li><a href="savoir-faire#metallerie">Métallerie · Serrurerie</a></li>
+                        <li><a href="savoir-faire#charpente">Charpente métallique</a></li>
+                        <li><a href="savoir-faire#salle-propre">Salle Propre & Ventilation</a></li>
                     </ul>
                 </div>
                 <div>

@@ -1,0 +1,3 @@
+# Agent skills (installed via npx skills)
+.agents/
+skills-lock.json

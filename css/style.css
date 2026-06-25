@@ -797,7 +797,7 @@ h3 {
 .why-section::after {
     content: 'ERRM';
     position: absolute;
-    right: -40px;
+    right: 0;
     top: 50%;
     transform: translateY(-50%);
     font-family: var(--font-title);
@@ -1124,7 +1124,7 @@ h3 {
 
 .page-hero-bg-text {
     position: absolute;
-    right: -20px;
+    right: 15px;
     top: 50%;
     transform: translateY(-50%);
     font-family: var(--font-title);

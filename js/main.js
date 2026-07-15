@@ -1,5 +1,20 @@
 // ERRM — Main JavaScript
 
+// GitHub Pages sert aussi les variantes /page.html et /index.html.
+// Normalise les anciennes URL vers les URL canoniques utilisées dans le sitemap.
+(() => {
+  if (!/^(www\.)?errm\.fr$/i.test(window.location.hostname)) return;
+
+  const currentPath = window.location.pathname;
+  const canonicalPath = currentPath
+    .replace(/\/index\.html$/i, '/')
+    .replace(/\.html$/i, '');
+
+  if (canonicalPath !== currentPath) {
+    window.location.replace(`${canonicalPath}${window.location.search}${window.location.hash}`);
+  }
+})();
+
 document.addEventListener('DOMContentLoaded', () => {
 
   // ========================

@@ -47,7 +47,7 @@ Forts de **plus de 30 ans d'expérience**, nous accompagnons les professionnels 
 
 Consultez notre portfolio en ligne pour découvrir la qualité de notre savoir-faire en images : 
 
-👉 **[Voir notre Galerie de Réalisations](https://errm.fr/realisations.html)**
+👉 **[Voir notre Galerie de Réalisations](https://errm.fr/realisations)**
 
 ---
 

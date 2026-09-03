@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>À propos — ERRM Métallerie & Serrurerie</title>
+    <title>Entreprise de métallerie industrielle | ERRM</title>
     <meta name="description"
-        content="ERRM, artisan métallier à Villers-Cotterêts depuis 1991. Découvrez notre histoire, nos valeurs et notre engagement pour la qualité." />
+        content="Découvrez ERRM, entreprise de métallerie, serrurerie, chaudronnerie et maintenance industrielles à Villers-Cotterêts depuis 1991." />
     <link rel="canonical" href="https://errm.fr/a-propos" />
     <link rel="icon" href="images/favicon.png" type="image/png" />
     <!-- Open Graph SEO -->
@@ -16,52 +16,36 @@
     <meta property="og:image" content="https://errm.fr/images/logo-errm.png" />
     <meta property="og:url" content="https://errm.fr/a-propos" />
     <meta property="og:type" content="website" />
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- Tarteaucitron -->
-    <script src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.17.0/tarteaucitron.min.js"></script>
-    <script>
-        tarteaucitron.init({
-            "privacyUrl": "mentions-legales",
-            "bodyPosition": "bottom",
-            "hashtag": "#tarteaucitron",
-            "cookieName": "tarteaucitron",
-            "orientation": "bottom",
-            "groupServices": false,
-            "showDetailsOnClick": true,
-            "serviceDefaultState": "wait",
-            "showAlertSmall": false,
-            "cookieslist": false,
-            "closePopup": false,
-            "showIcon": true,
-            "iconPosition": "BottomLeft",
-            "adblocker": false,
-            "DenyAllCta": true,
-            "AcceptAllCta": true,
-            "highPrivacy": true,
-            "handleBrowserDNTRequest": false,
-            "removeCredit": true,
-            "moreInfoLink": true,
-            "useExternalCss": false,
-            "useExternalJs": false,
-            "readmoreLink": "",
-            "mandatory": true,
-            "mandatoryCta": true
-        });
-
-        // Google Analytics (gtag)
-        tarteaucitron.user.gtagUa = 'G-G3J7LPT8J7';
-        tarteaucitron.user.gtagMore = function () { /* optionnel */ };
-        (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
-
-        // IFrames génériques (Google Maps)
-        (tarteaucitron.job = tarteaucitron.job || []).push('iframe');
-    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="css/style.css?v=20260903" />
+    <script defer src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.17.0/tarteaucitron.min.js"></script>
+    <script defer src="js/consent.js?v=20260903"></script>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@graph": [
         {
+          "@type": "AboutPage",
+          "@id": "https://errm.fr/a-propos#webpage",
+          "url": "https://errm.fr/a-propos",
+          "name": "À propos d'ERRM",
+          "description": "Présentation d'ERRM, entreprise de chaudronnerie, métallerie, serrurerie, tuyauterie et maintenance industrielle fondée en 1991 à Villers-Cotterêts.",
+          "isPartOf": {
+            "@id": "https://errm.fr/#website"
+          },
+          "about": {
+            "@id": "https://errm.fr/#organization"
+          },
+          "mainEntity": {
+            "@id": "https://errm.fr/#organization"
+          },
+          "inLanguage": "fr-FR"
+        },
+        {
           "@type": "BreadcrumbList",
+          "@id": "https://errm.fr/a-propos#breadcrumb",
           "itemListElement": [
             {
               "@type": "ListItem",
@@ -88,7 +72,7 @@
     <nav class="navbar">
         <div class="container navbar-inner">
             <a href="/" class="navbar-logo">
-                <img src="images/logo-errm.png" alt="Logo ERRM" />
+                <img src="images/logo-errm-512.webp" width="512" height="154" alt="ERRM" />
             </a>
             <ul class="navbar-links">
                 <li><a href="/">Accueil</a></li>
@@ -116,11 +100,11 @@
                 <li><a href="a-propos" class="active">À propos</a></li>
                 <li><a href="contact" class="navbar-cta">Contactez-nous</a></li>
             </ul>
-            <button class="burger" aria-label="Menu mobile">
+            <button class="burger" aria-label="Menu mobile" aria-expanded="false">
                 <span></span><span></span><span></span>
             </button>
         </div>
-        <div class="mobile-menu">
+        <div class="mobile-menu" role="navigation" aria-label="Menu mobile">
             <a href="/">Accueil</a>
             <a href="savoir-faire">Savoir-faire</a>
             <a href="realisations">Réalisations</a>
@@ -141,8 +125,8 @@
             <span class="section-label">L'entreprise</span>
             <h1>À propos d'ERRM</h1>
             <p style="color:var(--acier);max-width:580px;margin-top:16px;font-size:1.05rem;line-height:1.8">
-                Plus de 35 ans d'expérience dans la chaudronnerie, la tuyauterie, la métallerie, la maintenance
-                industrielle et la charpente métallique, au service des industriels, collectivités et particuliers.
+                ERRM est une entreprise fondée en 1991 à Villers-Cotterêts, spécialisée dans la chaudronnerie, la
+                tuyauterie, la métallerie, la maintenance industrielle et la charpente métallique.
             </p>
         </div>
     </section>
@@ -155,22 +139,21 @@
                     <span class="section-label reveal">Notre histoire</span>
                     <h2 class="reveal">Au service des professionnels depuis 1991</h2>
                     <p class="reveal" style="color:var(--acier);line-height:1.8;margin-bottom:16px;font-size:.95rem">
-                        Fondée en 1991 à Villers-Cotterêts, ERRM s'est forgée une solide réputation auprès des
-                        industriels et professionnels de l'agroalimentaire, des materiaux de construction,
-                        la chimie, la mécanique, la logistique.
+                        Fondée en 1991 à Villers-Cotterêts, ERRM s'est forgé une solide réputation auprès des
+                        industriels et des professionnels de l'agroalimentaire, des matériaux de construction, de la
+                        chimie, de la mécanique et de la logistique.
                     </p>
                     <p class="reveal" style="color:var(--acier);line-height:1.8;margin-bottom:16px;font-size:.95rem">
-                        Notre force : nous maitrisons les étude, la conception, lafabrication et la pose dans notre
-                        atelier
-                        et la pose sur site. Chaque ouvrage est
-                        fabriqué sur mesure dans notre atelier, selon les exigences techniques du client.
+                        Notre force : nous maîtrisons les études, la conception, la fabrication et la pose. Chaque
+                        ouvrage est fabriqué sur mesure dans notre atelier, selon les exigences techniques du client,
+                        puis installé sur site.
                     </p>
                     <p class="reveal" style="color:var(--acier);line-height:1.8;font-size:.95rem">
                         Nous intervenons dans toute la moitié nord de la France.
                     </p>
                 </div>
                 <div class="why-image reveal" style="position:relative">
-                    <img src="images/facade-errm.webp" alt="Atelier ERRM"
+                    <img width="1200" height="676" src="images/facade-errm-1200.webp" alt="Atelier de fabrication ERRM à Villers-Cotterêts" loading="lazy" decoding="async"
                         style="border-radius:4px; width: 100%; height: auto; object-fit: cover;" />
                     <div class="why-image-badge">
                         <div class="num">1991</div>
@@ -192,7 +175,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                         </svg>
                     </div>
-                    <h4>Étude</h4>
+                    <h3>Étude</h3>
                     <p>Ecoute du client pour proposer les solutions les plus adaptées à son besoin.</p>
                 </div>
                 <div class="value-card reveal reveal-delay-1">
@@ -203,7 +186,7 @@
                                 d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                         </svg>
                     </div>
-                    <h4>Proximité</h4>
+                    <h3>Proximité</h3>
                     <p>Un seul interlocuteur pour votre projet, du premier contact à la livraison finale. Réactivité et
                         disponibilité garantie.</p>
                 </div>
@@ -215,7 +198,7 @@
                                 d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
                         </svg>
                     </div>
-                    <h4>Sur mesure</h4>
+                    <h3>Sur mesure</h3>
                     <p>Pas de produit standard. Chaque réalisation est unique, adaptée à vos plans, vos dimensions et
                         vos contraintes.</p>
                 </div>
@@ -259,7 +242,7 @@
                 </div>
                 <div class="reveal reveal-delay-2"
                     style="flex: 1.2; min-width: 300px; display: flex; justify-content: center; align-items: center;">
-                    <img src="images/interieur-atelier.webp" alt="Intérieur de l'atelier"
+                    <img width="1200" height="553" src="images/interieur-atelier-1200.webp" alt="Intérieur de l'atelier de métallerie industrielle ERRM" loading="lazy" decoding="async"
                         style="border-radius: 8px; width: 100%; max-width: 800px; height: auto; object-fit: cover;" />
                 </div>
             </div>
@@ -352,12 +335,12 @@
             <div class="footer-grid">
                 <div>
                     <div class="footer-logo">
-                        <img src="images/logo-errm.png" alt="Logo ERRM" />
+                        <img src="images/logo-errm-512.webp" width="512" height="154" loading="lazy" decoding="async" alt="ERRM" />
                     </div>
                     <p class="footer-desc">Maintenance industrielle, chaudronnerie, tuyauterie, métallerie et serrurerie
                         à Villers-Cotterêts depuis 1991. Moitié nord de la France.</p>
                     <div style="margin-top: 24px;">
-                        <a href="https://www.linkedin.com/company/errm-02/" target="_blank" rel="noopener noreferrer"
+                        <a href="https://www.linkedin.com/company/errm-02/" target="_blank" rel="noopener noreferrer" aria-label="Page LinkedIn d'ERRM"
                             style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.05); color: var(--blanc-pur); transition: all 0.3s ease;"
                             onmouseover="this.style.background='#0077b5'; this.style.transform='translateY(-2px)';"
                             onmouseout="this.style.background='rgba(255,255,255,0.05)'; this.style.transform='translateY(0)';">
@@ -370,7 +353,7 @@
 
                 </div>
                 <div>
-                    <h4 class="footer-heading">Navigation</h4>
+                    <h2 class="footer-heading">Navigation</h2>
                     <ul class="footer-links">
                         <li><a href="/">Accueil</a></li>
                         <li><a href="savoir-faire">Savoir-faire</a></li>
@@ -380,7 +363,7 @@
                     </ul>
                 </div>
                 <div>
-                    <h4 class="footer-heading">Métiers</h4>
+                    <h2 class="footer-heading">Métiers</h2>
                     <ul class="footer-links">
                         <li><a href="savoir-faire#maintenance">Maintenance industrielle</a></li>
                         <li><a href="savoir-faire#chaudronnerie">Chaudronnerie · Tuyauterie</a></li>
@@ -390,7 +373,7 @@
                     </ul>
                 </div>
                 <div>
-                    <h4 class="footer-heading">Contacts directs</h4>
+                    <h2 class="footer-heading">Contacts directs</h2>
                     <div style="font-size:.88rem;color:rgba(180,190,205,0.75);line-height:2">
                         <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
                             <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor"
@@ -428,7 +411,7 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.js?v=20260903"></script>
 </body>
 
 </html>

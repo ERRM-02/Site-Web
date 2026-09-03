@@ -14,46 +14,12 @@
     <meta property="og:image" content="https://errm.fr/images/logo-errm.png" />
     <meta property="og:url" content="https://errm.fr/mentions-legales" />
     <meta property="og:type" content="website" />
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- Tarteaucitron -->
-    <script src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.17.0/tarteaucitron.min.js"></script>
-    <script>
-        tarteaucitron.init({
-            "privacyUrl": "mentions-legales",
-            "bodyPosition": "bottom",
-            "hashtag": "#tarteaucitron",
-            "cookieName": "tarteaucitron",
-            "orientation": "bottom",
-            "groupServices": false,
-            "showDetailsOnClick": true,
-            "serviceDefaultState": "wait",
-            "showAlertSmall": false,
-            "cookieslist": false,
-            "closePopup": false,
-            "showIcon": true,
-            "iconPosition": "BottomLeft",
-            "adblocker": false,
-            "DenyAllCta": true,
-            "AcceptAllCta": true,
-            "highPrivacy": true,
-            "handleBrowserDNTRequest": false,
-            "removeCredit": true,
-            "moreInfoLink": true,
-            "useExternalCss": false,
-            "useExternalJs": false,
-            "readmoreLink": "",
-            "mandatory": true,
-            "mandatoryCta": true
-        });
-
-        // Google Analytics (gtag)
-        tarteaucitron.user.gtagUa = 'G-G3J7LPT8J7';
-        tarteaucitron.user.gtagMore = function () { /* optionnel */ };
-        (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
-
-        // IFrames génériques (Google Maps)
-        (tarteaucitron.job = tarteaucitron.job || []).push('iframe');
-    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="css/style.css?v=20260903" />
+    <script defer src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.17.0/tarteaucitron.min.js"></script>
+    <script defer src="js/consent.js?v=20260903"></script>
 </head>
 
 <body>
@@ -62,7 +28,7 @@
     <nav class="navbar">
         <div class="container navbar-inner">
             <a href="/" class="navbar-logo">
-                <img src="images/logo-errm.png" alt="Logo ERRM" />
+                <img src="images/logo-errm-512.webp" width="512" height="154" alt="ERRM" />
             </a>
             <ul class="navbar-links">
                 <li><a href="/">Accueil</a></li>
@@ -71,11 +37,11 @@
                 <li><a href="a-propos">À propos</a></li>
                 <li><a href="contact" class="navbar-cta">Contactez-nous</a></li>
             </ul>
-            <button class="burger" aria-label="Menu mobile">
+            <button class="burger" aria-label="Menu mobile" aria-expanded="false">
                 <span></span><span></span><span></span>
             </button>
         </div>
-        <div class="mobile-menu">
+        <div class="mobile-menu" role="navigation" aria-label="Menu mobile">
             <a href="/">Accueil</a>
             <a href="savoir-faire">Savoir-faire</a>
             <a href="realisations">Réalisations</a>
@@ -103,13 +69,13 @@
             <div class="legal-content">
 
                 <div class="legal-section">
-                    <h3>Éditeur du site</h3>
+                    <h2>Éditeur du site</h2>
                     <p><strong style="color:var(--blanc-pur)">ERRM</strong></p>
                     <p>Société par Actions Simplifiée (SAS) au capital de 60 000 €</p>
                     <p>Siège social : 19 Bis Rue du Marchois, 02600 Villers-Cotterêts, France</p>
                     <p>SIREN : 381 951 524 (Immatriculée au Registre National des Entreprises)</p>
                     <p>Numéro de TVA intracommunautaire : FR 05 381 951 524</p>
-                    <p>Code APE : 4332B - Travaux de menuiserie métallique et serrurerie</p>
+                    <p>Code APE : 4332B</p>
                     <p>Téléphone : <a href="tel:0323967707" style="color:var(--rouge)">03 23 96 77 07</a></p>
                     <p>Mail : <a href="mailto:contact@errm.fr" style="color:var(--rouge)">contact@errm.fr</a></p>
                     <br />
@@ -117,7 +83,7 @@
                 </div>
 
                 <div class="legal-section">
-                    <h3>Hébergement</h3>
+                    <h2>Hébergement</h2>
                     <p>Ce site est hébergé par :</p>
                     <p><strong style="color:var(--blanc-pur)">GitHub, Inc. (GitHub Pages)</strong></p>
                     <p>88 Colin P Kelly Jr St, San Francisco, CA 94107, États-Unis</p>
@@ -125,7 +91,7 @@
                 </div>
 
                 <div class="legal-section">
-                    <h3>Propriété intellectuelle</h3>
+                    <h2>Propriété intellectuelle</h2>
                     <p>L'ensemble du contenu de ce site (textes, images, photographies, logos, graphismes) est la
                         propriété exclusive de ERRM SAS ou de ses partenaires, et est protégé par les lois françaises et
                         internationales relatives à la propriété intellectuelle.</p>
@@ -134,14 +100,14 @@
                 </div>
 
                 <div class="legal-section">
-                    <h3>Responsabilité</h3>
+                    <h2>Responsabilité</h2>
                     <p>ERRM SAS s'efforce d'assurer l'exactitude et la mise à jour des informations diffusées sur ce
                         site, mais ne peut garantir l'absence d'erreurs ou d'omissions.</p>
                     <p>ERRM SAS se réserve le droit de modifier les contenus du site à tout moment et sans préavis.</p>
                 </div>
 
                 <div class="legal-section">
-                    <h3>Données personnelles</h3>
+                    <h2>Données personnelles</h2>
                     <p>Les informations collectées via le formulaire de contact sont utilisées exclusivement dans le
                         cadre du traitement de votre demande de devis. Elles ne sont ni cédées, ni vendues à des tiers.
                     </p>
@@ -151,7 +117,7 @@
                 </div>
 
                 <div class="legal-section">
-                    <h3>Cookies</h3>
+                    <h2>Cookies</h2>
                     <p>Ce site utilise un outil de gestion des consentements (Tarteaucitron.js) pour vous permettre
                         d'accepter ou de refuser les cookies liés aux services tiers que nous utilisons.</p>
                     <p>Les services tiers suivants peuvent déposer des cookies sur votre navigateur, uniquement si vous
@@ -167,7 +133,7 @@
                 </div>
 
                 <div class="legal-section">
-                    <h3>Loi applicable</h3>
+                    <h2>Loi applicable</h2>
                     <p>Le présent site est soumis au droit français. Tout litige relatif à son utilisation relève de la
                         compétence exclusive des tribunaux français.</p>
                 </div>
@@ -182,12 +148,12 @@
             <div class="footer-grid">
                 <div>
                     <div class="footer-logo">
-                        <img src="images/logo-errm.png" alt="Logo ERRM" />
+                        <img src="images/logo-errm-512.webp" width="512" height="154" loading="lazy" decoding="async" alt="ERRM" />
                     </div>
                     <p class="footer-desc">Maintenance industrielle, chaudronnerie, tuyauterie, métallerie et serrurerie
                         à Villers-Cotterêts depuis 1991. Moitié nord de la France.</p>
                     <div style="margin-top: 24px;">
-                        <a href="https://www.linkedin.com/company/errm-02/" target="_blank" rel="noopener noreferrer"
+                        <a href="https://www.linkedin.com/company/errm-02/" target="_blank" rel="noopener noreferrer" aria-label="Page LinkedIn d'ERRM"
                             style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.05); color: var(--blanc-pur); transition: all 0.3s ease;"
                             onmouseover="this.style.background='#0077b5'; this.style.transform='translateY(-2px)';"
                             onmouseout="this.style.background='rgba(255,255,255,0.05)'; this.style.transform='translateY(0)';">
@@ -200,7 +166,7 @@
 
                 </div>
                 <div>
-                    <h4 class="footer-heading">Navigation</h4>
+                    <h2 class="footer-heading">Navigation</h2>
                     <ul class="footer-links">
                         <li><a href="/">Accueil</a></li>
                         <li><a href="savoir-faire">Savoir-faire</a></li>
@@ -210,7 +176,7 @@
                     </ul>
                 </div>
                 <div>
-                    <h4 class="footer-heading">Métiers</h4>
+                    <h2 class="footer-heading">Métiers</h2>
                     <ul class="footer-links">
                         <li><a href="savoir-faire#maintenance">Maintenance industrielle</a></li>
                         <li><a href="savoir-faire#chaudronnerie">Chaudronnerie · Tuyauterie</a></li>
@@ -219,7 +185,7 @@
                     </ul>
                 </div>
                 <div>
-                    <h4 class="footer-heading">Contacts directs</h4>
+                    <h2 class="footer-heading">Contacts directs</h2>
                     <div style="font-size:.88rem;color:rgba(180,190,205,0.75);line-height:2">
                         <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
                             <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor"
@@ -257,7 +223,7 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.js?v=20260903"></script>
 </body>
 
 </html>

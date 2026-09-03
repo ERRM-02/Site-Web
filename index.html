@@ -4,90 +4,116 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ERRM | Chaudronnerie & métallerie à Villers-Cotterêts</title>
+    <title>Chaudronnerie & métallerie industrielles | ERRM</title>
     <meta name="description"
-        content="Chaudronnerie, tuyauterie, métallerie et serrurerie sur mesure depuis 1991 à Villers-Cotterêts. ERRM étudie, fabrique, installe et dépanne." />
+        content="ERRM réalise vos travaux de chaudronnerie, tuyauterie, métallerie, serrurerie et maintenance industrielles sur mesure à Villers-Cotterêts." />
     <link rel="canonical" href="https://errm.fr/" />
     <link rel="icon" href="images/favicon.png" type="image/png" />
     <!-- Open Graph SEO -->
     <meta name="google-site-verification" content="rHEaQYFsIxFojjSp1_xIfT6s-RNbzac54SkyAOO1akg" />
-    <meta property="og:title" content="ERRM — Chaudronnerie & métallerie à Villers-Cotterêts" />
+    <meta property="og:title" content="Chaudronnerie & métallerie industrielles — ERRM" />
     <meta property="og:description"
-        content="Chaudronnerie, tuyauterie, métallerie et serrurerie sur mesure depuis 1991. Étude, fabrication, installation et dépannage." />
+        content="Étude, fabrication, pose et maintenance d'ouvrages métalliques industriels sur mesure depuis 1991." />
+    <meta property="og:site_name" content="ERRM" />
     <meta property="og:image" content="https://errm.fr/images/logo-errm.png" />
     <meta property="og:url" content="https://errm.fr/" />
     <meta property="og:type" content="website" />
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- Tarteaucitron -->
-    <script src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.17.0/tarteaucitron.min.js"></script>
-    <script>
-        tarteaucitron.init({
-            "privacyUrl": "mentions-legales",
-            "bodyPosition": "bottom",
-            "hashtag": "#tarteaucitron",
-            "cookieName": "tarteaucitron",
-            "orientation": "bottom",
-            "groupServices": false,
-            "showDetailsOnClick": true,
-            "serviceDefaultState": "wait",
-            "showAlertSmall": false,
-            "cookieslist": false,
-            "closePopup": false,
-            "showIcon": true,
-            "iconPosition": "BottomLeft",
-            "adblocker": false,
-            "DenyAllCta": true,
-            "AcceptAllCta": true,
-            "highPrivacy": true,
-            "handleBrowserDNTRequest": false,
-            "removeCredit": true,
-            "moreInfoLink": true,
-            "useExternalCss": false,
-            "useExternalJs": false,
-            "readmoreLink": "",
-            "mandatory": true,
-            "mandatoryCta": true
-        });
-
-        // Google Analytics (gtag)
-        tarteaucitron.user.gtagUa = 'G-G3J7LPT8J7';
-        tarteaucitron.user.gtagMore = function () { /* optionnel */ };
-        (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
-
-        // IFrames génériques (Google Maps)
-        (tarteaucitron.job = tarteaucitron.job || []).push('iframe');
-    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="image" href="images/hero-bg-mobile.webp" type="image/webp" media="(max-width: 767px)" fetchpriority="high" />
+    <link rel="preload" as="image" href="images/hero-bg-1920.webp" type="image/webp" media="(min-width: 768px)" fetchpriority="high" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="css/style.css?v=20260903" />
+    <script defer src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.17.0/tarteaucitron.min.js"></script>
+    <script defer src="js/consent.js?v=20260903"></script>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "ERRM",
-      "image": "https://errm.fr/images/logo-errm.png",
-      "@id": "https://errm.fr",
-      "url": "https://errm.fr",
-      "telephone": "+33323967707",
-      "email": "contact@errm.fr",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "19 Bis Rue du Marchois",
-        "addressLocality": "Villers-Cotterêts",
-        "postalCode": "02600",
-        "addressCountry": "FR"
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday"
-        ],
-        "opens": "08:00",
-        "closes": "17:00"
-      },
-      "sameAs": [
-        "https://www.linkedin.com/company/errm-02/"
+      "@graph": [
+        {
+          "@type": ["Organization", "LocalBusiness"],
+          "@id": "https://errm.fr/#organization",
+          "name": "ERRM",
+          "legalName": "ERRM",
+          "alternateName": "E.R.R.M.",
+          "url": "https://errm.fr/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://errm.fr/images/logo-errm-512.webp",
+            "contentUrl": "https://errm.fr/images/logo-errm-512.webp",
+            "width": 512,
+            "height": 154
+          },
+          "image": "https://errm.fr/images/facade-errm-1200.webp",
+          "description": "ERRM est une entreprise de chaudronnerie, métallerie, serrurerie, tuyauterie et maintenance industrielle basée à Villers-Cotterêts, dans l'Aisne.",
+          "foundingDate": "1991",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "SIREN",
+            "value": "381951524"
+          },
+          "telephone": "+33323967707",
+          "email": "contact@errm.fr",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "19 Bis Rue du Marchois",
+            "addressLocality": "Villers-Cotterêts",
+            "addressRegion": "Hauts-de-France",
+            "postalCode": "02600",
+            "addressCountry": "FR"
+          },
+          "areaServed": [
+            {
+              "@type": "AdministrativeArea",
+              "name": "Hauts-de-France"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Île-de-France"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Champagne-Ardenne"
+            }
+          ],
+          "knowsAbout": [
+            "Chaudronnerie industrielle",
+            "Tuyauterie industrielle",
+            "Métallerie",
+            "Serrurerie industrielle",
+            "Maintenance industrielle",
+            "Charpente métallique",
+            "Salles propres et ventilation"
+          ],
+          "sameAs": [
+            "https://www.linkedin.com/company/errm-02/"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://errm.fr/#website",
+          "url": "https://errm.fr/",
+          "name": "ERRM",
+          "alternateName": ["E.R.R.M.", "errm.fr"],
+          "publisher": {
+            "@id": "https://errm.fr/#organization"
+          },
+          "inLanguage": "fr-FR"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://errm.fr/#webpage",
+          "url": "https://errm.fr/",
+          "name": "Chaudronnerie & métallerie industrielles | ERRM",
+          "description": "ERRM réalise des ouvrages sur mesure de chaudronnerie, tuyauterie, métallerie, serrurerie et maintenance industrielle à Villers-Cotterêts.",
+          "isPartOf": {
+            "@id": "https://errm.fr/#website"
+          },
+          "about": {
+            "@id": "https://errm.fr/#organization"
+          },
+          "inLanguage": "fr-FR"
+        }
       ]
     }
     </script>
@@ -99,7 +125,7 @@
     <nav class="navbar" aria-label="Navigation principale">
         <div class="container navbar-inner">
             <a href="/" class="navbar-logo" aria-label="ERRM - Accueil">
-                <img src="images/logo-errm.png" alt="Logo ERRM" />
+                <img src="images/logo-errm-512.webp" width="512" height="154" alt="ERRM" />
             </a>
             <ul class="navbar-links" role="list">
                 <li><a href="/" class="active">Accueil</a></li>
@@ -155,8 +181,9 @@
                 <span>Serrurerie & Tuyauterie</span>
             </h1>
             <p class="hero-desc">
-                Chaudronnerie, tuyauterie, métallerie, serrurerie et charpente métallique
-                à Villers-Cotterêts. Interventions en Ile de France et dans toute la moitié nord de la France.
+                ERRM est une entreprise de chaudronnerie, métallerie, serrurerie, tuyauterie et maintenance industrielle
+                basée à Villers-Cotterêts. Son bureau d'études conçoit des ouvrages sur mesure en acier, inox et
+                aluminium, fabriqués dans son atelier.
             </p>
             <div class="hero-actions">
                 <a href="contact" class="btn btn-primary">
@@ -291,27 +318,27 @@
         <p class="clients-band-label">Ils nous font confiance</p>
         <div class="marquee-track">
             <!-- Liste 1 -- >
-            <div class="marquee-item"><img src="images/logos_client/sncf.png" alt="SNCF" /></div>
-            <div class="marquee-item"><img src="images/logos_client/Logo_Carrefour.svg.png" alt="Carrefour" /></div>
+            <div class="marquee-item"><img height="182" width="277" src="images/logos_client/sncf.png" alt="SNCF" /></div>
+            <div class="marquee-item"><img height="265" width="330" src="images/logos_client/Logo_Carrefour.svg.png" alt="Carrefour" /></div>
             <div class="marquee-item"><img src="images/logos_client/logo-engie-blue.svg" alt="Engie" /></div>
-            <div class="marquee-item"><img src="images/logos_client/Novotel-Logo.svg.png" alt="Novotel" /></div>
+            <div class="marquee-item"><img height="491" width="960" src="images/logos_client/Novotel-Logo.svg.png" alt="Novotel" /></div>
             <div class="marquee-item"><img src="images/logos_client/Logo-hutchinson.svg" alt="Hutchinson" /></div>
-            <div class="marquee-item"><img src="images/logos_client/Placo_logo.png" alt="Placoplatre" /></div>
-            <div class="marquee-item"><img src="images/logos_client/mersen.png" alt="Mersen" /></div>
-            <div class="marquee-item"><img src="images/logos_client/vallourec.png" alt="Vallourec" /></div>
-            <div class="marquee-item"><img src="images/logos_client/alstomflertex.png" alt="Flertex" /></div>
-            <div class="marquee-item"><img src="images/logos_client/william-saurin.png" alt="William Saurin" /></div>
+            <div class="marquee-item"><img height="769" width="1920" src="images/logos_client/Placo_logo.png" alt="Placoplatre" /></div>
+            <div class="marquee-item"><img height="348" width="1280" src="images/logos_client/mersen.png" alt="Mersen" /></div>
+            <div class="marquee-item"><img height="351" width="1530" src="images/logos_client/vallourec.png" alt="Vallourec" /></div>
+            <div class="marquee-item"><img height="123" width="820" src="images/logos_client/alstomflertex.png" alt="Flertex" /></div>
+            <div class="marquee-item"><img height="965" width="2560" src="images/logos_client/william-saurin.png" alt="William Saurin" /></div>
             <!-- Liste 2 — doublon pour boucle infinie seamless -- >
-            <div class="marquee-item"><img src="images/logos_client/sncf.png" alt="SNCF" /></div>
-            <div class="marquee-item"><img src="images/logos_client/Logo_Carrefour.svg.png" alt="Carrefour" /></div>
+            <div class="marquee-item"><img height="182" width="277" src="images/logos_client/sncf.png" alt="SNCF" /></div>
+            <div class="marquee-item"><img height="265" width="330" src="images/logos_client/Logo_Carrefour.svg.png" alt="Carrefour" /></div>
             <div class="marquee-item"><img src="images/logos_client/logo-engie-blue.svg" alt="Engie" /></div>
-            <div class="marquee-item"><img src="images/logos_client/Novotel-Logo.svg.png" alt="Novotel" /></div>
+            <div class="marquee-item"><img height="491" width="960" src="images/logos_client/Novotel-Logo.svg.png" alt="Novotel" /></div>
             <div class="marquee-item"><img src="images/logos_client/Logo-hutchinson.svg" alt="Hutchinson" /></div>
-            <div class="marquee-item"><img src="images/logos_client/Placo_logo.png" alt="Placoplatre" /></div>
-            <div class="marquee-item"><img src="images/logos_client/mersen.png" alt="Mersen" /></div>
-            <div class="marquee-item"><img src="images/logos_client/vallourec.png" alt="Vallourec" /></div>
-            <div class="marquee-item"><img src="images/logos_client/alstomflertex.png" alt="Flertex" /></div>
-            <div class="marquee-item"><img src="images/logos_client/william-saurin.png" alt="William Saurin" /></div>
+            <div class="marquee-item"><img height="769" width="1920" src="images/logos_client/Placo_logo.png" alt="Placoplatre" /></div>
+            <div class="marquee-item"><img height="348" width="1280" src="images/logos_client/mersen.png" alt="Mersen" /></div>
+            <div class="marquee-item"><img height="351" width="1530" src="images/logos_client/vallourec.png" alt="Vallourec" /></div>
+            <div class="marquee-item"><img height="123" width="820" src="images/logos_client/alstomflertex.png" alt="Flertex" /></div>
+            <div class="marquee-item"><img height="965" width="2560" src="images/logos_client/william-saurin.png" alt="William Saurin" /></div>
         </div>
     </div>
     -->
@@ -330,29 +357,29 @@
         <div class="container">
             <div class="gallery-grid">
                 <a href="realisations?filter=Chaudronnerie %26 Tuyauterie" class="gallery-item reveal">
-                    <img src="images/realisations/Chaudronnerie & Tuyauterie/chaudronnerie-et-tuyauterie-errm-villers-cotterets-4.webp"
-                        alt="Chaudronnerie & Tuyauterie" loading="lazy" />
+                    <img src="images/realisations/Chaudronnerie & Tuyauterie/chaudronnerie-et-tuyauterie-errm-villers-cotterets-4-home.webp"
+                        width="1200" height="720" alt="Ouvrage de chaudronnerie et tuyauterie industrielles réalisé par ERRM" loading="lazy" decoding="async" />
                     <div class="gallery-overlay">
                         <span class="gallery-overlay-text">Chaudronnerie & Tuyauterie</span>
                     </div>
                 </a>
                 <a href="realisations?filter=Métallerie %26 Serrurerie" class="gallery-item reveal reveal-delay-1">
-                    <img src="images/realisations/Métallerie & Serrurerie/metallerie-et-serrurerie-errm-villers-cotterets-18.webp"
-                        alt="Métallerie & Serrurerie" loading="lazy" />
+                    <img src="images/realisations/Métallerie & Serrurerie/metallerie-et-serrurerie-errm-villers-cotterets-18-home.webp"
+                        width="1200" height="675" alt="Ouvrage de métallerie et serrurerie industrielles fabriqué sur mesure par ERRM" loading="lazy" decoding="async" />
                     <div class="gallery-overlay">
                         <span class="gallery-overlay-text">Métallerie & Serrurerie</span>
                     </div>
                 </a>
                 <a href="realisations?filter=Maintenance industrielle" class="gallery-item reveal reveal-delay-2">
                     <img src="images/realisations/Maintenance industrielle/maintenance-industrielle-errm-villers-cotterets-2.jpeg"
-                        alt="Maintenance industrielle" loading="lazy" />
+                        width="507" height="381" alt="Intervention de maintenance industrielle ERRM" loading="lazy" decoding="async" />
                     <div class="gallery-overlay">
                         <span class="gallery-overlay-text">Maintenance Industrielle</span>
                     </div>
                 </a>
                 <a href="realisations?filter=Charpente Métallique" class="gallery-item reveal reveal-delay-3">
                     <img src="images/realisations/Charpente Métallique/charpente-metallique-errm-villers-cotterets-7.jpeg"
-                        alt="Charpente Métallique" loading="lazy" />
+                        width="552" height="425" alt="Charpente métallique industrielle réalisée par ERRM" loading="lazy" decoding="async" />
                     <div class="gallery-overlay">
                         <span class="gallery-overlay-text">Charpente Métallique</span>
                     </div>
@@ -375,7 +402,7 @@
                         <div class="why-feature reveal">
                             <span class="why-feature-num">01</span>
                             <div>
-                                <h4>Fabrication 100% sur mesure</h4>
+                                <h3>Fabrication 100% sur mesure</h3>
                                 <p>Chaque réalisation est unique. Nous adaptons nos productions à vos dimensions, vos
                                     contraintes et votre budget.</p>
                             </div>
@@ -383,7 +410,7 @@
                         <div class="why-feature reveal reveal-delay-1">
                             <span class="why-feature-num">02</span>
                             <div>
-                                <h4>De la conception à la pose</h4>
+                                <h3>De la conception à la pose</h3>
                                 <p>Études techniques, fabrication en atelier et installation sur site — un interlocuteur
                                     unique pour votre projet.</p>
                             </div>
@@ -391,7 +418,7 @@
                         <div class="why-feature reveal reveal-delay-2">
                             <span class="why-feature-num">03</span>
                             <div>
-                                <h4>Professionnels & Particuliers</h4>
+                                <h3>Professionnels & Particuliers</h3>
                                 <p>Chantiers industriels, collectivités, copropriétés — nous répondons à toutes
                                     les demandes, quel que soit le volume.</p>
                             </div>
@@ -399,7 +426,7 @@
                         <div class="why-feature reveal reveal-delay-3">
                             <span class="why-feature-num">04</span>
                             <div>
-                                <h4>Proximité & réactivité</h4>
+                                <h3>Proximité & réactivité</h3>
                                 <p>Basés à Villers-Cotterêts, nous intervenons rapidement dans toute la moitié nord de
                                     la France.</p>
                             </div>
@@ -407,8 +434,8 @@
                     </div>
                 </div>
                 <div class="why-image reveal">
-                    <img src="images/facade-errm.webp" alt="Façade ERRM"
-                        style="border-radius:4px; width: 100%; height: auto; object-fit: cover;" />
+                    <img src="images/facade-errm-1200.webp" width="1200" height="676" alt="Façade de l'atelier ERRM à Villers-Cotterêts"
+                        loading="lazy" decoding="async" style="border-radius:4px; width: 100%; height: auto; object-fit: cover;" />
                     <div class="why-image-badge">
                         <div class="num">1991</div>
                         <div class="label">Année de création</div>
@@ -475,12 +502,12 @@
             <div class="footer-grid">
                 <div>
                     <div class="footer-logo">
-                        <img src="images/logo-errm.png" alt="Logo ERRM" />
+                        <img src="images/logo-errm-512.webp" width="512" height="154" loading="lazy" decoding="async" alt="ERRM" />
                     </div>
                     <p class="footer-desc">Maintenance industrielle, chaudronnerie, tuyauterie, métallerie et serrurerie
                         à Villers-Cotterêts depuis 1991. Moitié nord de la France.</p>
                     <div style="margin-top: 24px;">
-                        <a href="https://www.linkedin.com/company/errm-02/" target="_blank" rel="noopener noreferrer"
+                        <a href="https://www.linkedin.com/company/errm-02/" target="_blank" rel="noopener noreferrer" aria-label="Page LinkedIn d'ERRM"
                             style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.05); color: var(--blanc-pur); transition: all 0.3s ease;"
                             onmouseover="this.style.background='#0077b5'; this.style.transform='translateY(-2px)';"
                             onmouseout="this.style.background='rgba(255,255,255,0.05)'; this.style.transform='translateY(0)';">
@@ -493,7 +520,7 @@
 
                 </div>
                 <div>
-                    <h4 class="footer-heading">Navigation</h4>
+                    <h2 class="footer-heading">Navigation</h2>
                     <ul class="footer-links">
                         <li><a href="/">Accueil</a></li>
                         <li><a href="savoir-faire">Savoir-faire</a></li>
@@ -503,7 +530,7 @@
                     </ul>
                 </div>
                 <div>
-                    <h4 class="footer-heading">Métiers</h4>
+                    <h2 class="footer-heading">Métiers</h2>
                     <ul class="footer-links">
                         <li><a href="savoir-faire#maintenance">Maintenance industrielle</a></li>
                         <li><a href="savoir-faire#chaudronnerie">Chaudronnerie · Tuyauterie</a></li>
@@ -513,7 +540,7 @@
                     </ul>
                 </div>
                 <div>
-                    <h4 class="footer-heading">Contacts directs</h4>
+                    <h2 class="footer-heading">Contacts directs</h2>
                     <div style="font-size:.88rem;color:rgba(180,190,205,0.75);line-height:2">
                         <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
                             <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor"
@@ -551,7 +578,7 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.js?v=20260903"></script>
 </body>
 
 </html>

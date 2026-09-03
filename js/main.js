@@ -10,8 +10,10 @@
     .replace(/\/index\.html$/i, '/')
     .replace(/\.html$/i, '');
 
-  if (canonicalPath !== currentPath) {
-    window.location.replace(`${canonicalPath}${window.location.search}${window.location.hash}`);
+  const canonicalUrl = `https://errm.fr${canonicalPath}${window.location.search}${window.location.hash}`;
+
+  if (canonicalPath !== currentPath || window.location.protocol !== 'https:' || window.location.hostname !== 'errm.fr') {
+    window.location.replace(canonicalUrl);
   }
 })();
 
@@ -34,14 +36,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const mobileMenu = document.querySelector('.mobile-menu');
   if (burger && mobileMenu) {
     burger.addEventListener('click', () => {
-      burger.classList.toggle('open');
-      mobileMenu.classList.toggle('open');
+      const isOpen = mobileMenu.classList.toggle('open');
+      burger.classList.toggle('open', isOpen);
+      burger.setAttribute('aria-expanded', String(isOpen));
     });
     // Close on link click
     mobileMenu.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         burger.classList.remove('open');
         mobileMenu.classList.remove('open');
+        burger.setAttribute('aria-expanded', 'false');
       });
     });
   }

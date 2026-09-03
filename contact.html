@@ -16,61 +16,38 @@
     <meta property="og:image" content="https://errm.fr/images/logo-errm.png" />
     <meta property="og:url" content="https://errm.fr/contact" />
     <meta property="og:type" content="website" />
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- Tarteaucitron -->
-    <script src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.17.0/tarteaucitron.min.js"></script>
-    <script>
-        tarteaucitron.init({
-            "privacyUrl": "mentions-legales",
-            "bodyPosition": "bottom",
-            "hashtag": "#tarteaucitron",
-            "cookieName": "tarteaucitron",
-            "orientation": "bottom",
-            "groupServices": false,
-            "showDetailsOnClick": true,
-            "serviceDefaultState": "wait",
-            "showAlertSmall": false,
-            "cookieslist": false,
-            "closePopup": false,
-            "showIcon": true,
-            "iconPosition": "BottomLeft",
-            "adblocker": false,
-            "DenyAllCta": true,
-            "AcceptAllCta": true,
-            "highPrivacy": true,
-            "handleBrowserDNTRequest": false,
-            "removeCredit": true,
-            "moreInfoLink": true,
-            "useExternalCss": false,
-            "useExternalJs": false,
-            "readmoreLink": "",
-            "mandatory": true,
-            "mandatoryCta": true
-        });
-
-        // Google Analytics (gtag)
-        tarteaucitron.user.gtagUa = 'G-G3J7LPT8J7';
-        tarteaucitron.user.gtagMore = function () { /* optionnel */ };
-        (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
-
-        // IFrames génériques (Google Maps)
-        (tarteaucitron.job = tarteaucitron.job || []).push('iframe');
-    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="css/style.css?v=20260903" />
+    <script defer src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.17.0/tarteaucitron.min.js"></script>
+    <script defer src="js/consent.js?v=20260903"></script>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@graph": [
         {
           "@type": "ContactPage",
-          "@id": "https://errm.fr/contact",
+          "@id": "https://errm.fr/contact#webpage",
           "url": "https://errm.fr/contact",
           "name": "Contact & Devis — ERRM Métallerie & Maintenance Industrielle",
-          "description": "Contactez ERRM pour un devis. Maintenance industrielle, chaudronnerie, métallerie, serrurerie à Villers-Cotterêts. Réponse sous 48h."
+          "description": "Contactez ERRM pour un devis. Maintenance industrielle, chaudronnerie, métallerie, serrurerie à Villers-Cotterêts. Réponse sous 48h.",
+          "isPartOf": {
+            "@id": "https://errm.fr/#website"
+          },
+          "about": {
+            "@id": "https://errm.fr/#organization"
+          },
+          "mainEntity": {
+            "@id": "https://errm.fr/#organization"
+          },
+          "inLanguage": "fr-FR"
         },
         {
           "@type": "LocalBusiness",
-          "@id": "https://errm.fr",
+          "@id": "https://errm.fr/#organization",
           "name": "ERRM",
+          "url": "https://errm.fr/",
           "image": "https://errm.fr/images/logo-errm.png",
           "telephone": "+33323967707",
           "email": "contact@errm.fr",
@@ -122,7 +99,7 @@
     <nav class="navbar">
         <div class="container navbar-inner">
             <a href="/" class="navbar-logo">
-                <img src="images/logo-errm.png" alt="Logo ERRM" />
+                <img src="images/logo-errm-512.webp" width="512" height="154" alt="ERRM" />
             </a>
             <ul class="navbar-links">
                 <li><a href="/">Accueil</a></li>
@@ -150,11 +127,11 @@
                 <li><a href="a-propos">À propos</a></li>
                 <li><a href="contact" class="navbar-cta active">Contactez-nous</a></li>
             </ul>
-            <button class="burger" aria-label="Menu mobile">
+            <button class="burger" aria-label="Menu mobile" aria-expanded="false">
                 <span></span><span></span><span></span>
             </button>
         </div>
-        <div class="mobile-menu">
+        <div class="mobile-menu" role="navigation" aria-label="Menu mobile">
             <a href="/">Accueil</a>
             <a href="savoir-faire">Savoir-faire</a>
             <a href="realisations">Réalisations</a>
@@ -188,7 +165,7 @@
 
                 <!-- FORMULAIRE FORMSPREE -->
                 <div class="contact-form reveal">
-                    <h3 style="margin-bottom:8px;font-size:1.6rem;color:var(--anthracite)">Votre demande de devis</h3>
+                    <h2 style="margin-bottom:8px;font-size:1.6rem;color:var(--anthracite)">Votre demande de devis</h2>
                     <p style="color:var(--acier);font-size:.88rem;margin-bottom:16px">Les champs marqués * sont
                         obligatoires.
                         Votre demande nous parvient directement par email.</p>
@@ -385,12 +362,12 @@
             <div class="footer-grid">
                 <div>
                     <div class="footer-logo">
-                        <img src="images/logo-errm.png" alt="Logo ERRM" />
+                        <img src="images/logo-errm-512.webp" width="512" height="154" loading="lazy" decoding="async" alt="ERRM" />
                     </div>
                     <p class="footer-desc">Maintenance industrielle, chaudronnerie, tuyauterie, métallerie et serrurerie
                         à Villers-Cotterêts depuis 1991. Moitié nord de la France.</p>
                     <div style="margin-top: 24px;">
-                        <a href="https://www.linkedin.com/company/errm-02/" target="_blank" rel="noopener noreferrer"
+                        <a href="https://www.linkedin.com/company/errm-02/" target="_blank" rel="noopener noreferrer" aria-label="Page LinkedIn d'ERRM"
                             style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.05); color: var(--blanc-pur); transition: all 0.3s ease;"
                             onmouseover="this.style.background='#0077b5'; this.style.transform='translateY(-2px)';"
                             onmouseout="this.style.background='rgba(255,255,255,0.05)'; this.style.transform='translateY(0)';">
@@ -403,7 +380,7 @@
 
                 </div>
                 <div>
-                    <h4 class="footer-heading">Navigation</h4>
+                    <h2 class="footer-heading">Navigation</h2>
                     <ul class="footer-links">
                         <li><a href="/">Accueil</a></li>
                         <li><a href="savoir-faire">Savoir-faire</a></li>
@@ -413,7 +390,7 @@
                     </ul>
                 </div>
                 <div>
-                    <h4 class="footer-heading">Métiers</h4>
+                    <h2 class="footer-heading">Métiers</h2>
                     <ul class="footer-links">
                         <li><a href="savoir-faire#maintenance">Maintenance industrielle</a></li>
                         <li><a href="savoir-faire#chaudronnerie">Chaudronnerie · Tuyauterie</a></li>
@@ -423,7 +400,7 @@
                     </ul>
                 </div>
                 <div>
-                    <h4 class="footer-heading">Contacts directs</h4>
+                    <h2 class="footer-heading">Contacts directs</h2>
                     <div style="font-size:.88rem;color:rgba(180,190,205,0.75);line-height:2">
                         <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
                             <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor"
@@ -461,7 +438,7 @@
         </div>
     </footer>
 
-    <script src="js/main.js?v=1.1"></script>
+    <script src="js/main.js?v=20260903"></script>
 </body>
 
 </html>

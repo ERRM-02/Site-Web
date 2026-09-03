@@ -4,7 +4,6 @@
    Palette : Blanc acier #F4F3F0 | Anthracite #1E2228 | Rouge #B82222 | Acier #5A6472
    ============================================= */
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap');
 
 /* ========================
    RESET & BASE
@@ -486,11 +485,17 @@ h3 {
 .hero-bg-img {
     position: absolute;
     inset: 0;
-    background-image: url('../images/hero-bg.webp');
+    background-image: url('../images/hero-bg-1920.webp');
     background-size: cover;
     background-position: center;
-    filter: grayscale(20%) brightness(0.75);
+    filter: brightness(0.78);
     z-index: 0;
+}
+
+@media (max-width: 767px) {
+    .hero-bg-img {
+        background-image: url('../images/hero-bg-mobile.webp');
+    }
 }
 
 .hero-noise {
@@ -612,6 +617,16 @@ h3 {
 .services-section {
     background: var(--noir-light);
     position: relative;
+}
+
+.services-section,
+.realisations-preview,
+.why-section,
+.zone-section,
+.contact-bar,
+.footer {
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 800px;
 }
 
 .services-section::before {
@@ -839,6 +854,11 @@ h3 {
     margin-bottom: 6px;
 }
 
+.why-feature h3 {
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+}
+
 .why-feature p {
     font-size: 0.9rem;
     color: var(--acier);
@@ -1031,6 +1051,9 @@ h3 {
 
 .footer-logo img {
     height: 40px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
 }
 
 .footer-desc {
@@ -1489,7 +1512,8 @@ h3 {
     opacity: 1;
 }
 
-.gallery-page-overlay h4 {
+.gallery-page-overlay h4,
+.gallery-card-title {
     font-size: 1.1rem;
     margin-bottom: 4px;
     color: var(--blanc-pur);
@@ -1752,7 +1776,8 @@ h3 {
     stroke-width: 1.5;
 }
 
-.value-card h4 {
+.value-card h4,
+.value-card h3 {
     font-size: 1.2rem;
     margin-bottom: 10px;
 }
@@ -1821,7 +1846,8 @@ h3 {
     margin-bottom: 48px;
 }
 
-.legal-section h3 {
+.legal-section h3,
+.legal-section h2 {
     font-size: 1.4rem;
     margin-bottom: 16px;
     padding-bottom: 10px;
@@ -2112,6 +2138,20 @@ h3 {
     margin-left: 16px;
     flex-shrink: 0;
     opacity: 0.5;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
 }
 
 /* Espace modéré entre la section services et le bandeau clients */
